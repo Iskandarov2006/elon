@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Admin panel</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.0.2 -->
+  <link rel="stylesheet" href="./admin_panel.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <a href="/" class="logo">logo</a>
+      <div class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+
+      <div class="nav__link hide">
+        <a href="./index.html">home</a>
+        <a href="#"><select name="" id="kategoriya">
+            <option value="">Uy-joy</option>
+            <option value="">Mashina</option>
+            <option value="">Yer mulk</option>
+            <option value="">mayshiy texnika</option>
+            <option value="">Texnalogiyalar</option>
+            <option value="">Kiyimlar </option>
+          </select></a>
+        <a href="./kirish.html">Kirish</a>
+        <a href="./reklama-qoshish.html">Reklama qo`shish</a>
+        <a href="#ariza">Ariza</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="user-img-text">
+    <div class="user-img"> 
+      <img src="./images/user.png" alt="">
+    </div>
+    <div class="user-text">
+      <h5><b id="username">Username</b><h5>
+      <div class="btn-tahrirlash">
+      <button id="malumot_tahrir">Ma`lumotlarni tahrirlash</button>
+      </div>
+    </div>
+  </div>
+
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+        type="button" role="tab" aria-controls="pills-home" aria-selected="true">Xabarlar</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+        type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Sotilganlar</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+        type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Sotuvdagilar</button>
+    </li>
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+      <div class="xabar-yuborish">
+        <div class="messagelar">
+          <div class="message">
+            <p class="message-javob" id="message-javobb" onclick="javobyozish()">Javob yozish</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium!
+          </div>
+          <div class="message" id="javob-user">
+            
+          </div>
+          <div class="message">
+            <p class="message-javob" id="message-javob" onclick="javobyozish()">Javob yozish</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium!
+          </div>
+          <div class="message" id="javob-user">
+
+          </div>
+          <div class="message">
+            <p class="message-javob" id="message-javob"  onclick="javobyozish()">Javob yozish</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium!
+          </div>
+          <div class="message" id="javob-user">
+
+          </div>
+          <div class="message">
+            <p class="message-javob" id="message-javob" onclick="javobyozish()">Javob yozish</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium!
+          </div>
+          <div class="message" id="javob-user">
+
+          </div>
+          <div class="message">
+            <p class="message-javob" id="message-javob" onclick="javobyozish()">Javob yozish</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium!
+          </div>
+          <div class="message" id="javob-user">
+
+          </div>
+          <div class="message">
+            <p class="message-javob" id="message-javob" onclick="javobyozish()">Javob yozish</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium!
+          </div>
+          <div class="message" id="javob-user">
+
+          </div>
+          <div class="message">
+            <p class="message-javob" id="message-javob" onclick="javobyozish()">Javob yozish</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium!
+          </div>
+          <div class="message" id="javob-user">
+
+          </div>
+          <div class="message">
+            <p class="message-javob" id="message-javob" onclick="javobyozish()">Javob yozish</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium!
+          </div>
+          <div class="message" id="javob-user">
+
+          </div>
+          <div class="message">
+            <p class="message-javob" id="message-javob" onclick="javobyozish()">Javob yozish</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium!
+          </div>
+          <div class="message" id="javob-user">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+      <div class="cardlar">
+        <div class="card">
+          <div class="card-img">
+            <img src="./images/computers.1a9936df.webp" alt="">
+          </div>
+          <div class="card-title">
+            <h3>Card title</h3>
+          </div>
+          <div class="card-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae esse provident reprehenderit temporibus
+              quasi tenetur!
+            </p>
+          </div>
+          <div class="card-summ">
+            500$
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./images/computers.1a9936df.webp" alt="">
+          </div>
+          <div class="card-title">
+            <h3>Card title</h3>
+          </div>
+          <div class="card-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae esse provident reprehenderit temporibus
+              quasi tenetur!
+            </p>
+          </div>
+          <div class="card-summ">
+            500$
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./images/computers.1a9936df.webp" alt="">
+          </div>
+          <div class="card-title">
+            <h3>Card title</h3>
+          </div>
+          <div class="card-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae esse provident reprehenderit temporibus
+              quasi tenetur!
+            </p>
+          </div>
+          <div class="card-summ">
+            500$
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./images/computers.1a9936df.webp" alt="">
+          </div>
+          <div class="card-title">
+            <h3>Card title</h3>
+          </div>
+          <div class="card-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae esse provident reprehenderit temporibus
+              quasi tenetur!
+            </p>
+          </div>
+          <div class="card-summ">
+            500$
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./images/computers.1a9936df.webp" alt="">
+          </div>
+          <div class="card-title">
+            <h3>Card title</h3>
+          </div>
+          <div class="card-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae esse provident reprehenderit temporibus
+              quasi tenetur!
+            </p>
+          </div>
+          <div class="card-summ">
+            500$
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./images/computers.1a9936df.webp" alt="">
+          </div>
+          <div class="card-title">
+            <h3>Card title</h3>
+          </div>
+          <div class="card-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae esse provident reprehenderit temporibus
+              quasi tenetur!
+            </p>
+          </div>
+          <div class="card-summ">
+            500$
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./images/computers.1a9936df.webp" alt="">
+          </div>
+          <div class="card-title">
+            <h3>Card title</h3>
+          </div>
+          <div class="card-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae esse provident reprehenderit temporibus
+              quasi tenetur!
+            </p>
+          </div>
+          <div class="card-summ">
+            500$
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+      <div class="cardlar">
+        <div class="card">
+          <div class="card-img">
+            <img src="./images/computers.1a9936df.webp" alt="">
+          </div>
+          <div class="card-title">
+            <h3>Card title</h3>
+          </div>
+          <div class="card-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae esse provident reprehenderit temporibus
+              quasi tenetur!
+            </p>
+          </div>
+          <div class="card-summ">
+            500$
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./images/computers.1a9936df.webp" alt="">
+          </div>
+          <div class="card-title">
+            <h3>Card title</h3>
+          </div>
+          <div class="card-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae esse provident reprehenderit temporibus
+              quasi tenetur!
+            </p>
+          </div>
+          <div class="card-summ">
+            500$
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./images/computers.1a9936df.webp" alt="">
+          </div>
+          <div class="card-title">
+            <h3>Card title</h3>
+          </div>
+          <div class="card-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae esse provident reprehenderit temporibus
+              quasi tenetur!
+            </p>
+          </div>
+          <div class="card-summ">
+            500$
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer>
+    <div class="footer-clean">
+      <footer>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-4 col-md-3 item">
+              <h3>Bog`lanish</h3>
+              <ul>
+                <li><a href="tel: +998994542480">+998994542480</a></li>
+                <li><a href="tel: +998990456773">+998990456773</a></li>
+                <li><a href="https://t.me/Ilhomjon6773">Telegram</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 item">
+              <h3>navigator</h3>
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Kirish</a></li>
+                <li><a href="#">Ariza</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 item">
+              <h3>Ariza</h3>
+              <ul>
+                <form action="https://formspree.io/f/mqkngdad" method="POST">
+                  <input type="email" name="email" placeholder="emailingizni kiritng" id="email">
+                  <textarea name="ariza" id="ariza" cols="0" placeholder="arizangizni yozing" rows="0"></textarea>
+                  <a href="" onclick="tbn()"><button class="yuborish-ariza" type="submit">Yuborish</button></a>
+                </form>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </footer>
+
+
+  <script src="./admin-panel.js"></script>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="./main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html> 

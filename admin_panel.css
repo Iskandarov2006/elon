@@ -1,0 +1,402 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: whitesmoke !important;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+} 
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: rgb(5, 5, 116);
+    padding-left: 20px;
+}
+
+.hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: black;
+}
+
+.nav__link {
+    position: fixed;
+    width: 94%;
+    top: 5rem;
+    left: 18px;
+    background-color: lightblue;
+}
+
+.nav__link a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#kategoriya {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.0);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+    color: rgb(55, 121, 192);
+}
+
+#kategoriya option {
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+
+.hide {
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    .nav__link {
+        display: block;
+        position: static;
+        width: auto;
+        margin-right: 20px;
+        background: none;
+    }
+
+    .nav__link a {
+        display: inline-block;
+        padding: 15px 20px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
+
+.nav-pills {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.user-img-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.user-img-text img {
+    border-radius: 15rem;
+    width: 150px;
+    height: 150px;
+}
+
+.btn-tahrirlash h2 {
+    margin-top: -2rem;
+}
+
+.btn-tahrirlash button {
+    width: 300px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    height: 45px;
+    border: 1px solid red;
+    border-radius: 5px;
+    color: red;
+    background-color: rgba(0, 0, 0, 0.0);
+    font-weight: 700;
+    transition: all 0.5s;
+    margin-top: 1rem;
+}
+
+.btn-tahrirlash button:hover {
+    width: 300px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: red;
+    transition: all 0.5s;
+    margin-top: 1rem;
+}
+
+.btn-tahrirlash a {
+    text-decoration: none;
+}
+
+.cardlar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+
+.card .card-img img {
+    width: 250px;
+    height: 200px;
+}
+
+.card .card-body p {
+    width: 250px;
+    margin-top: 1rem;
+}
+
+.card .card-summ {
+    margin-top: 1rem;
+    width: 200px;
+}
+
+.card {
+    margin: 1rem;
+    border: none !important;
+    background-color: white;
+    width: 250px;
+}
+
+
+
+
+
+
+
+
+.footer-clean {
+    padding: 50px 0;
+    background-color: #DFFAF9;
+    color: #4b4c4d;
+}
+
+.footer-clean h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footer-clean ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.footer-clean ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-clean ul a:hover {
+    opacity: 1;
+}
+
+.footer-clean .item.social {
+    text-align: right;
+}
+
+@media (max-width:767px) {
+    .footer-clean .item {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-clean .item.social {
+        text-align: center;
+    }
+}
+
+.footer-clean .item.social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    margin-top: 22px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-clean .item.social>a:hover {
+    opacity: 0.9;
+}
+
+@media (max-width:991px) {
+    .footer-clean .item.social>a {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width:767px) {
+    .footer-clean .item.social>a {
+        margin-top: 10px;
+    }
+}
+
+.footer-clean .copyright {
+    margin-top: 14px;
+    margin-bottom: 0;
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+
+
+#email {
+    width: 250px;
+    height: 35px;
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.0);
+    outline: none;
+}
+
+
+
+
+
+#email:focus {
+    width: 250px;
+    height: 35px;
+    border: 1px solid darkblue;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.0);
+    outline: none;
+}
+
+#ariza {
+    width: 250px;
+    height: 35px;
+    margin-top: 1rem;
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.0);
+    outline: none;
+    padding: 1rem;
+}
+
+
+#ariza:focus {
+    width: 250px;
+    height: 35px;
+    margin-top: 1rem;
+    border: 1px solid darkblue;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.0);
+    outline: none;
+    padding: 1rem;
+}
+
+.yuborish-ariza {
+    width: 200px;
+    height: 30px;
+    border: 1px solid red;
+    color: red;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.yuborish-ariza:hover {
+    width: 200px;
+    height: 30px;
+    border: none;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s;
+} 
+
+.message{
+    width: 590px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(253, 215, 182);
+    padding: 1rem;
+    border-radius: 15px;
+    margin: 100px;
+}
+.messagelar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    flex-wrap: wrap;
+}
+.javob-yozish a{
+    margin-left: 420px;
+    font-size: 10px;
+    color: blue;
+}
+.message-javob{
+    font-size: 10px;
+    float: right;
+    margin-left: 74%;
+    color: blue;
+}
+.javob-user{
+    color: black;
+    font-size: 1rem;
+}
+#javob-user{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 500px) {
+    .user-img-text{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+#tahrir-javob{
+    margin-left: 400px;
+    font-size: 10px;
+    margin-top: -15px;
+}
